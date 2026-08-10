@@ -1,0 +1,53 @@
+{
+  "run_id": "20260803-071932-152138",
+  "run_dir": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-071932-152138",
+  "variant": "langgraph-en",
+  "user_task": "Data are located at input/data37.xlsx. Build an ASM model to simulate a facultative tank, including COD degradation, complete nitrogen removal, and enhanced biological phosphorus removal. The boundaries to consider are low aeration (oxygen transfer volumetric coefficient is 2 /h, and saturated dissolved oxygen concentration is 8.0 mg/L) + hydraulic connection (hydraulic exchange rate coefficient is 0.2 /h, and influent concentration is taken from the first row of the data37 data table) + external carbon dosing (readily biodegradable soluble COD dosing rate is 10 mg COD/L/h, acting on the readily biodegradable soluble COD component). Calibrate ammonia nitrogen, nitrate nitrogen, and orthophosphate. Please keep intermediate files and analyze the modeling process and results",
+  "status": "ok",
+  "fatal_error": null,
+  "elapsed_seconds": 295.18397,
+  "input_tokens": 235053,
+  "output_tokens": 10403,
+  "r2_before": {
+    "source": "baseline",
+    "per_target": {
+      "S_sub_NH_sub_4": 0.9949054030005126,
+      "S_sub_NO_sub_3": 0.996994417735163,
+      "S_sub_PO_sub_4": 0.6005952412178126
+    },
+    "overall_mean": 0.8641650206511627
+  },
+  "r2_after": {
+    "source": "recovered",
+    "per_target": {
+      "S_sub_NH_sub_4": 0.9940838813056877,
+      "S_sub_NO_sub_3": 0.998149016360642,
+      "S_sub_PO_sub_4": 0.6393171122600856
+    },
+    "overall_mean": 0.8771833366421383
+  },
+  "r2_before_overall": 0.8641650206511627,
+  "r2_after_overall": 0.8771833366421383,
+  "r2": 0.8771833366421383,
+  "param_change_count": 2,
+  "param_changed_count": 2,
+  "param_total_count": 95,
+  "execution_trace": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-071932-152138\\execution_trace.json",
+  "process_checks": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-071932-152138\\process_checks.json",
+  "process_checks_passed": true,
+  "artifacts": {
+    "report_md": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en6\\output\\task-20260803-071932-152138-task37\\asm_report.md",
+    "report_pdf": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en6\\output\\task-20260803-071932-152138-task37\\asm_report.pdf",
+    "calibration": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en6\\output\\task-20260803-071932-152138-task37\\midoutput\\calibration.json",
+    "fig2_data": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-071932-152138\\figs\\fig2_data.json",
+    "param_ori": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-071932-152138\\midoutput\\param_ori.json",
+    "param_ref": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-071932-152138\\midoutput\\param_ref.json",
+    "param_opt": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-071932-152138\\midoutput\\param_opt.json",
+    "candidate_config": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-071932-152138\\midoutput\\candidate_config.json",
+    "asm_config_before": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-071932-152138\\midoutput\\asm_config_before.json",
+    "asm_config_after": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-071932-152138\\midoutput\\asm_config_after.json",
+    "asm_config": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en6\\output\\task-20260803-071932-152138-task37\\midoutput\\asm_config.json",
+    "sensitivity": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en6\\output\\task-20260803-071932-152138-task37\\midoutput\\sensitivity.json"
+  },
+  "final_config_path": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en6\\output\\task-20260803-071932-152138-task37\\midoutput\\asm_config.json"
+}

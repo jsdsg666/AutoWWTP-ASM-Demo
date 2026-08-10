@@ -1,0 +1,53 @@
+{
+  "run_id": "20260803-065152-646576",
+  "run_dir": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-065152-646576",
+  "variant": "langgraph-en",
+  "user_task": "Data are located at input/data26.xlsx. Build an ASM model to simulate an anoxic selector tank, including COD degradation and simplified nitrogen removal. The boundaries to consider are internal recycle (internal recycle exchange rate coefficient is 0.5 /h, recycle liquor nitrate nitrogen concentration is 25 mg/L, and recycle liquor dissolved oxygen concentration is 0.5 mg/L) + sludge return (sludge return rate coefficient is 0.5 /h, and return sludge concentration is 2 times the steady-state concentration). Calibrate nitrate nitrogen, readily biodegradable COD, and heterotrophic biomass. Please keep intermediate files and analyze the modeling process and results",
+  "status": "ok",
+  "fatal_error": null,
+  "elapsed_seconds": 92.567174,
+  "input_tokens": 73598,
+  "output_tokens": 2677,
+  "r2_before": {
+    "source": "baseline",
+    "per_target": {
+      "S_sub_NO_sub_3": 0.09550014060146406,
+      "S_sub_S": 0.9861610361278944,
+      "X_sub_H": 0.5735386911946707
+    },
+    "overall_mean": 0.5517332893080097
+  },
+  "r2_after": {
+    "source": "recovered",
+    "per_target": {
+      "S_sub_NO_sub_3": 0.12346346395049801,
+      "S_sub_S": 0.9971025409861327,
+      "X_sub_H": 0.573342551265529
+    },
+    "overall_mean": 0.5646361854007199
+  },
+  "r2_before_overall": 0.5517332893080097,
+  "r2_after_overall": 0.5646361854007199,
+  "r2": 0.5646361854007199,
+  "param_change_count": 4,
+  "param_changed_count": 4,
+  "param_total_count": 32,
+  "execution_trace": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-065152-646576\\execution_trace.json",
+  "process_checks": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-065152-646576\\process_checks.json",
+  "process_checks_passed": true,
+  "artifacts": {
+    "report_md": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en8\\output\\task-20260803-065152-646576-task26\\asm_report.md",
+    "report_pdf": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en8\\output\\task-20260803-065152-646576-task26\\asm_report.pdf",
+    "calibration": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en8\\output\\task-20260803-065152-646576-task26\\midoutput\\calibration.json",
+    "fig2_data": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-065152-646576\\figs\\fig2_data.json",
+    "param_ori": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-065152-646576\\midoutput\\param_ori.json",
+    "param_ref": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-065152-646576\\midoutput\\param_ref.json",
+    "param_opt": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-065152-646576\\midoutput\\param_opt.json",
+    "candidate_config": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-065152-646576\\midoutput\\candidate_config.json",
+    "asm_config_before": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-065152-646576\\midoutput\\asm_config_before.json",
+    "asm_config_after": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-065152-646576\\midoutput\\asm_config_after.json",
+    "asm_config": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en8\\output\\task-20260803-065152-646576-task26\\midoutput\\asm_config.json",
+    "sensitivity": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en8\\output\\task-20260803-065152-646576-task26\\midoutput\\sensitivity.json"
+  },
+  "final_config_path": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en8\\output\\task-20260803-065152-646576-task26\\midoutput\\asm_config.json"
+}

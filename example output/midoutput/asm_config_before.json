@@ -1,0 +1,24 @@
+{
+  "modelcomplex": "IntegratedNPR",
+  "calibmode": "ParetoMOEA",
+  "sens_targets": {
+    "S_sub_NH_sub_4": 1.0,
+    "S_sub_NO_sub_3": 1.0,
+    "S_sub_PO_sub_4": 1.0
+  },
+  "xlsx_path": "input/data31.xlsx",
+  "sens_delta": 0.1,
+  "senstopk": 8,
+  "maxiter": 150,
+  "boundaries": {
+    "aeration": {
+      "K_L_a": 2.0,
+      "S_O_sat": 8.0
+    },
+    "internal_recycle": null,
+    "ras_recycle": null,
+    "hydraulic": null,
+    "carbon_dose": null,
+    "chem_dose": null
+  }
+}

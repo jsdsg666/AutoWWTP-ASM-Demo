@@ -1,0 +1,83 @@
+{
+  "run_id": "20260803-070230-590569",
+  "all_passed": true,
+  "checks": [
+    {
+      "id": "knowledge_context_bound_to_targets",
+      "file": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-070230-590569\\midoutput\\WWTPProcessContext.md",
+      "passed": true,
+      "details": {
+        "file_exists": true,
+        "char_count": 4240,
+        "target_hits": [
+          "S_sub_NH_sub_4",
+          "S_sub_NO_sub_3",
+          "S_sub_PO_sub_4"
+        ]
+      }
+    },
+    {
+      "id": "plan_declares_core_choices",
+      "file": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-070230-590569\\midoutput\\asm_plan.md",
+      "passed": true,
+      "details": {
+        "modelcomplex": true,
+        "calibmode": true,
+        "senstopk": true,
+        "user_task_echo": true
+      }
+    },
+    {
+      "id": "modeling_json_required_shape",
+      "file": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-070230-590569\\midoutput\\asm_config_before.json",
+      "passed": true,
+      "details": {
+        "missing_fields": [],
+        "missing_boundary_keys": [],
+        "extra_fields": []
+      }
+    },
+    {
+      "id": "final_config_matches_active_model_scope",
+      "file": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-070230-590569\\midoutput\\asm_config.json",
+      "passed": true,
+      "details": {
+        "modelcomplex": "IntegratedNPR",
+        "scope_error": null,
+        "unexpected_params": [],
+        "missing_params": [],
+        "invalid_targets": [],
+        "param_count": 95
+      }
+    },
+    {
+      "id": "sensitivity_topk_drives_optimized_params",
+      "file": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-070230-590569\\midoutput\\sensitivity.json",
+      "passed": true,
+      "details": {
+        "senstopk": 8,
+        "topk_names": [
+          "K_sub_PP_sep_MAX",
+          "b_sub_H_sep_O_sub_2",
+          "K_sub_H_sep_O_sub_2",
+          "Y_sub_PAO_sep_O_sub_2",
+          "i_sub_NBM",
+          "q_sub_PP",
+          "eta_sub_H_sep_end_NO_sub_3",
+          "f_sub_XI"
+        ],
+        "changed_ref_to_opt": [
+          "K_sub_H_sep_O_sub_2",
+          "K_sub_PP_sep_MAX",
+          "Y_sub_PAO_sep_O_sub_2",
+          "b_sub_H_sep_O_sub_2",
+          "eta_sub_H_sep_end_NO_sub_3",
+          "f_sub_XI",
+          "i_sub_NBM",
+          "q_sub_PP"
+        ],
+        "param_ori_ref_diff": []
+      }
+    }
+  ]
+}

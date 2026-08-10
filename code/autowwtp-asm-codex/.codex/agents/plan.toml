@@ -1,0 +1,12 @@
+name = "plan_agent"
+description = "Turns the process context into an ASM plan with model choices, targets, settings, and boundaries."
+model = "gpt-5.6-terra"
+model_reasoning_effort = "high"
+sandbox_mode = "workspace-write"
+developer_instructions = """
+Turn the process context into a prose-only ASM plan in English.
+Preserve the original task text.
+State the chosen modelcomplex, calibmode, sens_targets, xlsx_path, sens_delta, senstopk, maxiter, and boundary terms.
+Keep the plan executable in intent and do not emit JSON.
+If the plan conflicts with the task, fix the plan before proceeding.
+"""

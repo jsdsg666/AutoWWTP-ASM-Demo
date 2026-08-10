@@ -1,0 +1,47 @@
+{
+  "_note": "WeightedNRMSE: weighted NRMSE objective (scipy Nelder-Mead); obs_data = target columns from data.xlsx aligned with t_h; initial values = current PARAMS defaults.",
+  "modelcomplex": "IntegratedNPR",
+  "calibmode": "WeightedNRMSE",
+  "targets": [
+    "S_sub_NH_sub_4",
+    "S_sub_NO_sub_3",
+    "S_sub_PO_sub_4"
+  ],
+  "weights": {
+    "S_sub_NH_sub_4": 1.0,
+    "S_sub_NO_sub_3": 1.0,
+    "S_sub_PO_sub_4": 1.0
+  },
+  "params": [
+    "K_sub_PP_sep_MAX",
+    "b_sub_H_sep_O_sub_2",
+    "K_sub_H_sep_O_sub_2",
+    "Y_sub_PAO_sep_O_sub_2"
+  ],
+  "x0": {
+    "K_sub_PP_sep_MAX": 0.34,
+    "b_sub_H_sep_O_sub_2": 0.0125,
+    "K_sub_H_sep_O_sub_2": 0.2,
+    "Y_sub_PAO_sep_O_sub_2": 0.625
+  },
+  "recovered": {
+    "K_sub_PP_sep_MAX": 0.3355398909864966,
+    "b_sub_H_sep_O_sub_2": 0.013183395390206819,
+    "K_sub_H_sep_O_sub_2": 0.24506755035196948,
+    "Y_sub_PAO_sep_O_sub_2": 0.5278977026485812
+  },
+  "final_cost": 0.5839621921021706,
+  "n_iter": 100,
+  "n_eval": 170,
+  "success": false,
+  "message": "Maximum number of iterations has been exceeded.",
+  "history_len": 170,
+  "r2_recovered": {
+    "per_target": {
+      "S_sub_NH_sub_4": 0.9882237954277606,
+      "S_sub_NO_sub_3": 0.9926188243838551,
+      "S_sub_PO_sub_4": 0.9598988673761343
+    },
+    "overall_mean": 0.9802471623959167
+  }
+}

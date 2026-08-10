@@ -1,0 +1,16 @@
+{
+  "run_id": "20260803-070230-590569",
+  "variant": "langgraph-en",
+  "status": "ok",
+  "fatal_error": null,
+  "elapsed_seconds": 180.897726,
+  "candidate_config_path": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-070230-590569\\midoutput\\candidate_config.json",
+  "final_config_path": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-070230-590569\\midoutput\\asm_config.json",
+  "repair_count": 0,
+  "needs_revision_count": 0,
+  "json_parse_error_count": 0,
+  "model_returncode": 0,
+  "ode_solver_success": true,
+  "process_checks_path": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-070230-590569\\process_checks.json",
+  "process_checks_passed": true
+}

@@ -1,0 +1,53 @@
+{
+  "run_id": "20260803-062541-179632",
+  "run_dir": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-062541-179632",
+  "variant": "langgraph-en",
+  "user_task": "Data are located at input/data13.xlsx. Build an ASM model to simulate an aerobic tank, including COD degradation and simplified nitrogen removal. The boundary to consider is strong aeration (oxygen transfer volumetric coefficient is 15 /h, and saturated dissolved oxygen concentration is 8.0 mg/L). Calibrate ammonia nitrogen, nitrate nitrogen, and dissolved oxygen. Please keep intermediate files and analyze the modeling process and results",
+  "status": "ok",
+  "fatal_error": null,
+  "elapsed_seconds": 127.981836,
+  "input_tokens": 94813,
+  "output_tokens": 3097,
+  "r2_before": {
+    "source": "baseline",
+    "per_target": {
+      "S_sub_NH_sub_4": 0.32142466707507844,
+      "S_sub_NO_sub_3": 0.3332633732955126,
+      "S_sub_O_sub_2": -0.03130695092431912
+    },
+    "overall_mean": 0.20779369648209065
+  },
+  "r2_after": {
+    "source": "recovered",
+    "per_target": {
+      "S_sub_NH_sub_4": 0.9950828827192459,
+      "S_sub_NO_sub_3": -0.959484472425298,
+      "S_sub_O_sub_2": -4.6485657344985185
+    },
+    "overall_mean": -1.5376557747348567
+  },
+  "r2_before_overall": 0.20779369648209065,
+  "r2_after_overall": -1.5376557747348567,
+  "r2": -1.5376557747348567,
+  "param_change_count": 4,
+  "param_changed_count": 4,
+  "param_total_count": 32,
+  "execution_trace": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-062541-179632\\execution_trace.json",
+  "process_checks": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-062541-179632\\process_checks.json",
+  "process_checks_passed": true,
+  "artifacts": {
+    "report_md": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en3\\output\\task-20260803-062541-179632-task13\\asm_report.md",
+    "report_pdf": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en3\\output\\task-20260803-062541-179632-task13\\asm_report.pdf",
+    "calibration": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en3\\output\\task-20260803-062541-179632-task13\\midoutput\\calibration.json",
+    "fig2_data": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-062541-179632\\figs\\fig2_data.json",
+    "param_ori": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-062541-179632\\midoutput\\param_ori.json",
+    "param_ref": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-062541-179632\\midoutput\\param_ref.json",
+    "param_opt": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-062541-179632\\midoutput\\param_opt.json",
+    "candidate_config": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-062541-179632\\midoutput\\candidate_config.json",
+    "asm_config_before": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-062541-179632\\midoutput\\asm_config_before.json",
+    "asm_config_after": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en\\output\\task-20260803-062541-179632\\midoutput\\asm_config_after.json",
+    "asm_config": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en3\\output\\task-20260803-062541-179632-task13\\midoutput\\asm_config.json",
+    "sensitivity": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en3\\output\\task-20260803-062541-179632-task13\\midoutput\\sensitivity.json"
+  },
+  "final_config_path": "F:\\wyq\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\langgraph-en3\\output\\task-20260803-062541-179632-task13\\midoutput\\asm_config.json"
+}
