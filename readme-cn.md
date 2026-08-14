@@ -10,7 +10,7 @@ AutoWWTP-ASM 面向污水处理厂 ASM 建模任务：根据任务文本和输�
 - `data/`：开放数据或整理后的数据文件
 - `task/`：开放任务说明
 - `example output/`：示例输出结果
-- `stress test/`：压力测试相关文件
+- `failure test example/`：失败案例结果摘要，仅保留未通过过程检查的 JSON 文件
 - `LICENSE`：MIT 开源协议
 - `readme-cn.md`：中文说明
 - `readme-en.md`：英文说明
@@ -191,6 +191,10 @@ code/langgraph-en/input/
 - 目标污染物或状态变量
 - 是否考虑边界条件，例如回流、曝气、加药、外碳源等
 - 校准目标和期望输出
+
+## 失败案例结果
+
+`failure test example/` 保留了 13 个未通过过程检查的结果摘要。每个文件均为有效 JSON，且其 `process_checks_passed` 字段为 `false`。
 
 ## 其他版本说明
 

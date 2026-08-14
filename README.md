@@ -18,7 +18,7 @@ AutoWWTP-ASM 面向污水处理厂 ASM 建模任务：根据任务文本和输�
 - `data/`：开放数据或整理后的数据文件
 - `task/`：开放任务说明
 - `example output/`：示例输出结果
-- `stress test/`：压力测试相关文件
+- `failure test example/`：失败案例结果摘要，仅保留未通过过程检查的 JSON 文件
 - `LICENSE`：MIT 开源协议
 - `readme-cn.md`：中文说明
 - `readme-en.md`：英文说明
@@ -200,6 +200,10 @@ code/langgraph-en/input/
 - 是否考虑边界条件，例如回流、曝气、加药、外碳源等
 - 校准目标和期望输出
 
+## 失败案例结果
+
+`failure test example/` 保留了 13 个未通过过程检查的结果摘要。每个文件均为有效 JSON，且其 `process_checks_passed` 字段为 `false`。
+
 ## 其他版本说明
 
 消融版本用于验证不同模块对最终建模表现的贡献：
@@ -244,7 +248,7 @@ AutoWWTP-ASM is designed for ASM modeling tasks in wastewater treatment plants. 
 - `data/`: open data or reorganized data files
 - `task/`: open task descriptions
 - `example output/`: example output results
-- `stress test/`: stress-test files
+- `failure test example/`: failed-case result summaries; only JSON files that did not pass process checks are retained
 - `LICENSE`: MIT license
 - `readme-cn.md`: Chinese documentation
 - `readme-en.md`: English documentation
@@ -426,6 +430,10 @@ The task description should clearly specify:
 - target pollutants or state variables
 - whether boundary conditions are considered, such as return flow, aeration, dosing, or external carbon source
 - calibration targets and expected outputs
+
+## Failed-Case Results
+
+`failure test example/` retains 13 result summaries that did not pass the process checks. Each file is valid JSON with `process_checks_passed` set to `false`.
 
 ## Other Variants
 

@@ -10,7 +10,7 @@ AutoWWTP-ASM is designed for ASM modeling tasks in wastewater treatment plants. 
 - `data/`: open data or reorganized data files
 - `task/`: open task descriptions
 - `example output/`: example output results
-- `stress test/`: stress-test files
+- `failure test example/`: failed-case result summaries; only JSON files that did not pass process checks are retained
 - `LICENSE`: MIT license
 - `readme-cn.md`: Chinese documentation
 - `readme-en.md`: English documentation
@@ -192,6 +192,10 @@ The task description should clearly specify:
 - target pollutants or state variables
 - whether boundary conditions are considered, such as return flow, aeration, dosing, or external carbon source
 - calibration targets and expected outputs
+
+## Failed-Case Results
+
+`failure test example/` retains 13 result summaries that did not pass the process checks. Each file is valid JSON with `process_checks_passed` set to `false`.
 
 ## Other Variants
 
