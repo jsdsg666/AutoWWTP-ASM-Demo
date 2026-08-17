@@ -4,6 +4,8 @@ This directory contains the open-code bundle for AutoWWTP-ASM, including the ful
 
 AutoWWTP-ASM is designed for ASM modeling tasks in wastewater treatment plants. Given a task description and input data, it identifies the process context, generates an ASM modeling plan, extracts executable model configuration, runs sensitivity analysis and parameter calibration, and produces reports, figures, traces, and final results.
 
+<!-- Example video: example.mp4 (AutoWWTP-ASM workflow demonstration) -->
+
 ## Directory Layout
 
 - `code/`: source projects and comparison variants
