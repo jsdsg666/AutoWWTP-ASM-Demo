@@ -2,9 +2,7 @@
 
 [中文](#中文) | [English](#english)
 
-<video src="https://github.com/jsdsg666/AutoWWTP-ASM-Demo/raw/refs/heads/main/example.mp4" controls width="800">
-  Your browser does not support embedded videos. [Download example.mp4](https://github.com/jsdsg666/AutoWWTP-ASM-Demo/raw/refs/heads/main/example.mp4).
-</video>
+🎬 [点击打开示例视频（example.mp4）](https://github.com/jsdsg666/AutoWWTP-ASM-Demo/blob/main/example.mp4)
 
 ---
 
