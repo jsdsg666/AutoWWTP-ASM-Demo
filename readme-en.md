@@ -1,6 +1,6 @@
 # AutoWWTP-ASM Open Code Bundle
 
-This directory contains the open-code bundle for AutoWWTP-ASM, including the full multi-agent modeling workflow, ablation variants, single-agent comparison variants, and project-style packages for Codex and Claude Code.
+This directory contains the open-code bundle for AutoWWTP-ASM, and project-style packages for Codex and Claude Code.
 
 AutoWWTP-ASM is designed for ASM modeling tasks in wastewater treatment plants. Given a task description and input data, it identifies the process context, generates an ASM modeling plan, extracts executable model configuration, runs sensitivity analysis and parameter calibration, and produces reports, figures, traces, and final results.
 
@@ -20,11 +20,6 @@ AutoWWTP-ASM is designed for ASM modeling tasks in wastewater treatment plants. 
 ## Projects in `code/`
 
 - `langgraph-en`: main project with the full LangGraph multi-agent workflow
-- `langgraph-en-no-knowledge`: ablation version without the knowledge stage
-- `langgraph-en-no-plan`: ablation version without the planning stage
-- `langgraph-en-no-reflection`: ablation version without the reflection stage
-- `langgraph-en-sa`: single-agent comparison version
-- `langgraph-en-sa-f`: single-agent comparison version with additional self-check logic
 - `skill`: AutoWWTP-ASM packaged as a Codex skill
 - `autowwtp-asm-codex`: Codex project structure with `AGENTS.md` and `.codex/agents/*.toml`
 - `autowwtp-asm-claude`: Claude Code project structure with `CLAUDE.md` and `.claude/agents/*.md`
@@ -195,29 +190,6 @@ The task description should clearly specify:
 - whether boundary conditions are considered, such as return flow, aeration, dosing, or external carbon source
 - calibration targets and expected outputs
 
-## Failed-Case Results
-
-`failure test example/` retains 13 result summaries that did not pass the process checks. Each file is valid JSON with `process_checks_passed` set to `false`.
-
-## Other Variants
-
-Ablation variants are used to evaluate the contribution of different modules:
-
-- `langgraph-en-no-knowledge`: tests the effect of removing the process-identification stage
-- `langgraph-en-no-plan`: tests the effect of removing the explicit planning stage
-- `langgraph-en-no-reflection`: tests the effect of removing configuration reflection and checking
-
-Single-agent variants are used for comparison with the multi-agent workflow:
-
-- `langgraph-en-sa`
-- `langgraph-en-sa-f`
-
-Project-packaged variants are used to compare organization patterns across agent platforms:
-
-- `autowwtp-asm-codex`
-- `autowwtp-asm-claude`
-- `skill`
-
 ## License
 
 This code bundle is released under the MIT License. See the formal license text in:
@@ -225,3 +197,12 @@ This code bundle is released under the MIT License. See the formal license text 
 ```text
 LICENSE
 ```
+
+Some personal thoughts from the first author, Yu-Qi Wang:
+This is my first research paper on Agents, and it may also be the first study on long-horizon Agents published in EST. If you have read the paper and arrived here, I believe you are also a hardworking researcher.
+This study was completed in 2025, submitted in 2026, and accepted in September 2026. During this process, I experienced the generational evolution of GPT from version 3 to version 6, while the research framework, methods, and LLMs used in the study were revised repeatedly. I believe you have already read about many of the strengths of this work in the paper. However, AI is developing so rapidly that it is difficult to know whether these methods will remain sufficiently innovative several years from now. Therefore, I would like to discuss some limitations here:
+1. This study constrains the inputs and outputs of the LLM through a relatively fixed, predefined model library. Although this approach greatly reduces hallucinations, it also limits the model’s autonomy. As LLM capabilities continue to improve and Agent frameworks evolve, could models generate code directly in the future? Examples include the latest Claude Fable 5.1 and GPT-6, as well as the Cordis framework behind DeepSeek Harness.
+2. Could the benchmark include more wastewater treatment scenarios and corresponding tasks?
+3. Scenario-specific metrics are difficult to identify, and the reproducibility of LLM-as-a-judge remains relatively limited. This type of research still requires substantial human involvement.
+Because I have been awarded a new project, I am unable to continue developing this project. There are still many practical ideas that could be pursued along this research path, and I welcome everyone to contact me at 17877784587@163.com. I also hope that you will share your suggestions.
+Finally, I would like to thank my handling editor and the three reviewers for their valuable suggestions during the EST submission process. I do not know whether you will return to look at this work, but your suggestions truly helped me. LLM Agents remain an emerging research direction in the environmental field. I am grateful to these rigorous and kind editors and reviewers.
