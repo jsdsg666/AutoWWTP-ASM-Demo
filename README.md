@@ -4,7 +4,7 @@
 
 🎬 [点击打开示例视频（example.mp4）](https://github.com/jsdsg666/AutoWWTP-ASM-Demo/blob/main/example.mp4)
 
-![AutoWWTP-ASM 使用流程演示](example.gif)
+![AutoWWTP-ASM 使用流程演示](https://raw.githubusercontent.com/jsdsg666/AutoWWTP-ASM-Demo/main/example.gif)
 
 ---
 
