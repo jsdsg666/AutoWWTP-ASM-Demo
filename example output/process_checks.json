@@ -1,0 +1,79 @@
+{
+  "run_id": "20260925-131012-959615",
+  "all_passed": true,
+  "checks": [
+    {
+      "id": "knowledge_context_bound_to_targets",
+      "file": "F:\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\open\\allopen\\code\\langgraph-en\\output\\task-20260925-131012-959615\\midoutput\\WWTPProcessContext.md",
+      "passed": true,
+      "details": {
+        "file_exists": true,
+        "char_count": 3560,
+        "target_hits": [
+          "S_sub_S",
+          "S_sub_PO_sub_4",
+          "X_sub_PHA"
+        ]
+      }
+    },
+    {
+      "id": "plan_declares_core_choices",
+      "file": "F:\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\open\\allopen\\code\\langgraph-en\\output\\task-20260925-131012-959615\\midoutput\\asm_plan.md",
+      "passed": true,
+      "details": {
+        "modelcomplex": true,
+        "calibmode": true,
+        "senstopk": true,
+        "user_task_echo": true
+      }
+    },
+    {
+      "id": "modeling_json_required_shape",
+      "file": "F:\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\open\\allopen\\code\\langgraph-en\\output\\task-20260925-131012-959615\\midoutput\\asm_config_before.json",
+      "passed": true,
+      "details": {
+        "missing_fields": [],
+        "missing_boundary_keys": [],
+        "extra_fields": []
+      }
+    },
+    {
+      "id": "final_config_matches_active_model_scope",
+      "file": "F:\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\open\\allopen\\code\\langgraph-en\\output\\task-20260925-131012-959615\\midoutput\\asm_config.json",
+      "passed": true,
+      "details": {
+        "modelcomplex": "EBPRCODN",
+        "scope_error": null,
+        "unexpected_params": [],
+        "missing_params": [],
+        "invalid_targets": [],
+        "param_count": 59
+      }
+    },
+    {
+      "id": "sensitivity_topk_drives_optimized_params",
+      "file": "F:\\lunwen\\lunwen24_AutoWWTP-asm\\code\\code\\open\\allopen\\code\\langgraph-en\\output\\task-20260925-131012-959615\\midoutput\\sensitivity.json",
+      "passed": true,
+      "details": {
+        "senstopk": 6,
+        "topk_names": [
+          "q_sub_PHA",
+          "k_sub_H",
+          "K_sub_X",
+          "K_sub_PAO_sep_S",
+          "Y_sub_PO_sub_4_sep_PP",
+          "b_sub_PHA"
+        ],
+        "changed_ref_to_opt": [
+          "K_sub_PAO_sep_S",
+          "K_sub_X",
+          "Y_sub_PO_sub_4_sep_PP",
+          "b_sub_PHA",
+          "k_sub_H",
+          "q_sub_PHA"
+        ],
+        "param_ori_ref_diff": []
+      }
+    }
+  ]
+}

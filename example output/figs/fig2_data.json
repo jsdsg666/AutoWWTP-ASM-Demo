@@ -1,0 +1,21 @@
+{
+  "baseline": {
+    "source": "baseline",
+    "per_target": {
+      "S_sub_S": 0.9862458822953306,
+      "S_sub_PO_sub_4": 0.8714392659657647,
+      "X_sub_PHA": 0.4453034744082972
+    },
+    "overall_mean": 0.7676628742231308
+  },
+  "fitted": {
+    "source": "recovered",
+    "per_target": {
+      "S_sub_S": 0.9987248675043969,
+      "S_sub_PO_sub_4": 0.9100233540583104,
+      "X_sub_PHA": 0.460802422944519
+    },
+    "overall_mean": 0.7898502148357421
+  },
+  "pareto_selection": null
+}

@@ -1,0 +1,53 @@
+{
+  "_note": "WeightedNRMSE: weighted NRMSE objective (scipy Nelder-Mead); obs_data = target columns from data.xlsx aligned with t_h; initial values = current PARAMS defaults.",
+  "modelcomplex": "EBPRCODN",
+  "calibmode": "WeightedNRMSE",
+  "targets": [
+    "S_sub_S",
+    "S_sub_PO_sub_4",
+    "X_sub_PHA"
+  ],
+  "weights": {
+    "S_sub_S": 1.0,
+    "S_sub_PO_sub_4": 1.0,
+    "X_sub_PHA": 1.0
+  },
+  "params": [
+    "q_sub_PHA",
+    "k_sub_H",
+    "K_sub_X",
+    "K_sub_PAO_sep_S",
+    "Y_sub_PO_sub_4_sep_PP",
+    "b_sub_PHA"
+  ],
+  "x0": {
+    "q_sub_PHA": 0.125,
+    "k_sub_H": 0.0833,
+    "K_sub_X": 1.0,
+    "K_sub_PAO_sep_S": 4.0,
+    "Y_sub_PO_sub_4_sep_PP": 0.4,
+    "b_sub_PHA": 0.00833
+  },
+  "recovered": {
+    "q_sub_PHA": 0.14123597181049247,
+    "k_sub_H": 0.03410414571134466,
+    "K_sub_X": 0.6688131485536863,
+    "K_sub_PAO_sep_S": 5.688341348163716,
+    "Y_sub_PO_sub_4_sep_PP": 0.4184976663818011,
+    "b_sub_PHA": 0.009677465276738302
+  },
+  "final_cost": 0.3012451827895358,
+  "n_iter": 120,
+  "n_eval": 188,
+  "success": false,
+  "message": "Maximum number of iterations has been exceeded.",
+  "history_len": 188,
+  "r2_recovered": {
+    "per_target": {
+      "S_sub_S": 0.9987248675043969,
+      "S_sub_PO_sub_4": 0.9100233540583104,
+      "X_sub_PHA": 0.460802422944519
+    },
+    "overall_mean": 0.7898502148357421
+  }
+}

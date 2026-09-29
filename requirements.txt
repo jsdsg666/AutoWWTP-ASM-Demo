@@ -1,0 +1,12 @@
+langgraph
+langchain-core
+langchain-openai
+langchain-anthropic
+langchain-google-genai
+pandas
+numpy
+scipy
+matplotlib
+openpyxl
+markdown-pdf
+pymoo

@@ -1,0 +1,24 @@
+{
+  "modelcomplex": "EBPRCODN",
+  "calibmode": "WeightedNRMSE",
+  "sens_targets": {
+    "S_sub_S": 1.0,
+    "S_sub_PO_sub_4": 1.0,
+    "X_sub_PHA": 1.0
+  },
+  "xlsx_path": "input/data1.xlsx",
+  "sens_delta": 0.1,
+  "senstopk": 6,
+  "maxiter": 120,
+  "boundaries": {
+    "aeration": null,
+    "internal_recycle": null,
+    "ras_recycle": {
+      "k_RAS": 0.5,
+      "factor": 2.0
+    },
+    "hydraulic": null,
+    "carbon_dose": null,
+    "chem_dose": null
+  }
+}
